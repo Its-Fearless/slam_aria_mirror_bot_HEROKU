@@ -92,7 +92,7 @@ def get_progress_bar_string(status):
 def get_readable_message():
     with download_dict_lock:
         msg = ""
-        msg = ""
+
         for download in list(download_dict.values()):
             msg += f"<b>☞🗃️File :</b> <code>{download.name()}</code>"
             msg += f"\n<b>☞🚦Status :</b> <b>{download.status()}</b>"
